@@ -26,10 +26,10 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 //add routes
 app.use(require('./routes/user.route'))
+app.use(require('./routes/userlogin.route'))
 app.use(require('./routes/record.route'))
 app.use(require('./routes/activity.route'))
 app.use(require('./routes/notification.route'))
-
 
 
 function RunServer(){
