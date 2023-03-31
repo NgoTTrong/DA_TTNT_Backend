@@ -1,12 +1,12 @@
 @urlDev=http://localhost:3001
 
 ### add data
-POST {{urlDev}}/userlogin
+POST {{urlDev}}/userreg
 Content-Type: application/json
 
 {
     "userInfo":{
-        "username" : "abc",
+        "username" : "abca",
         "password" : "abc"
     }
 }

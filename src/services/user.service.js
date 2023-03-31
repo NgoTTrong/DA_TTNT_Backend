@@ -1,7 +1,17 @@
+const User = require('../models/user.model')
 const Userlogin = require('../models/userlogin.model')
 
 module.exports = {
     createUser: async (userInfo) => {
+        let user = new User(userInfo);
+        await user.save();
+        return {
+            code: 200,
+            message: userInfo
+        }
+    },
+
+    createUserLogin: async (userInfo) => {
         let user = new Userlogin(userInfo);
 
         try {
